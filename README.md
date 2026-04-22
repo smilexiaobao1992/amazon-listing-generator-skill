@@ -151,10 +151,24 @@ The skill only creates all 8 AS slots when explicitly requested.
 户外场景
 厨房场景
 只要英文
+中文文案
+图片文字用中文
+中英双语
 不要文字
 高端商业感
 更有动态感
 视觉更强烈
+```
+
+Visible text defaults to English for Amazon US. Ask for Chinese or bilingual
+copy explicitly when needed:
+
+```text
+生成中文副图
+图片文字用中文
+尺寸图用中文标注
+标题和标签都用中文
+生成中英双语副图
 ```
 
 ## Slot Reference

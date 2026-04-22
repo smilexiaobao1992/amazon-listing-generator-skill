@@ -186,11 +186,11 @@ For every proposed image, answer these checks before generating:
 
 Every production secondary image needs a clear hierarchy:
 
-1. **Big headline / core viewpoint**: one strong buyer-facing claim, usually
-   3-8 words in English for US Amazon. It should answer "why should I care?"
-   not merely name the slot. Avoid weak labels like "Features", "Details",
-   "Stable Home Training", or "Product Benefits" unless strengthened with a
-   specific promise.
+1. **Big headline / core viewpoint**: one strong buyer-facing claim. It should
+   answer "why should I care?" not merely name the slot. Use the selected image
+   text language. For US Amazon, this is usually 3-8 English words. Avoid weak
+   labels like "Features", "Details", "Stable Home Training", or "Product
+   Benefits" unless strengthened with a specific promise.
 2. **Visual proof**: product in action, range, comparison, mechanism, scale, or
    environment that proves the headline.
 3. **Support labels**: 1-3 short badges/callouts with exact specs or proof.
@@ -284,8 +284,24 @@ Default to **strong commercial Amazon visuals**, not plain catalog layouts:
 User-specified art direction overrides auto-completion. Preserve explicit
 requests for style, scene, colour palette, language, target user, background,
 layout, angle, size labels, and text placement. If the user says "家庭风格",
-"厨房场景", "黑金风", "不要文字", "只要英文", or similar, incorporate that
-constraint into the relevant prompt instead of using the default style.
+"厨房场景", "黑金风", "不要文字", "只要英文", "中文文案", "中英双语",
+or similar, incorporate that constraint into the relevant prompt instead of
+using the default style.
+
+Visible image text language rules:
+
+- Default to English for Amazon US or when the user says "Amazon.com", "US",
+  "美国站", or "只要英文".
+- Use Chinese visible text when the user says "中文文案", "图片文字用中文",
+  "中文副图", "中文标注", "国内平台", or similar.
+- Use bilingual Chinese-English text only when the user explicitly asks for
+  "中英双语" or "双语". Keep bilingual text sparse because it increases visual
+  density.
+- If the marketplace is unclear, infer from the user's requested language and
+  product context. State the language assumption before generation when it may
+  affect the output.
+- Keep specs exact in any language. Translate meaning, not unit values. Do not
+  invent claims while translating.
 
 Assume anything missing and state assumptions clearly. Do not ask questions
 first unless the request is impossible without a product category.
@@ -649,6 +665,7 @@ associatedWith / instanceOf / preconditionOf / enabledBy
 - [ ] Preview batches under 5 images are generated only when explicitly requested
 - [ ] Every image has a buyer concern, visual proof, and strong thumbnail hierarchy
 - [ ] User style constraints such as "家庭风格" and "暖色" are visible in the prompt
+- [ ] Visible image text language follows user request or marketplace assumption
 - [ ] Excel generation matches requested mode; copy-only requests do not write files unless export is requested
 - [ ] AM-01 warning shown
 - [ ] Excel file written only when the user requested export or full-kit output
