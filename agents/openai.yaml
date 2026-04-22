@@ -1,0 +1,7 @@
+interface:
+  display_name: "Amazon Listing Generator"
+  short_description: "Amazon文案与副图提示词生成"
+  default_prompt: "Use $amazon-listing-generator with my product photo and selling points to create an Amazon listing kit."
+
+policy:
+  allow_implicit_invocation: true
