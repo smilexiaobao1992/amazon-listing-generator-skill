@@ -1,22 +1,18 @@
 # Amazon Listing Generator Skill
 
-Codex skill for creating Amazon listing assets from a product photo and selling
-points. It can generate listing copy, secondary-image plans/prompts, optional AI
-secondary images, A+ detail-page modules, and an Excel summary.
+这是一个用于生成 Amazon Listing 资产的 Codex skill。它可以基于产品白底图和卖点信息，生成 Listing 文案、副图规划与提示词、可选 AI 副图、A+ / 详情页模块图，以及 Excel 汇总表。
 
-## What It Does
+## 功能说明
 
-- Generates Amazon title, 5 bullets, description, and backend search terms.
-- Plans Amazon secondary images from product facts and buyer concerns.
-- Supports single image slots such as dimensions, lifestyle, comparison, or
-  feature breakdown.
-- Separates carousel secondary images from detail-page / A+ modules.
-- Uses competitor or reference images as inspiration without copying them.
-- Groups selling points by buyer logic instead of making one image per spec.
-- Emphasizes clear headline, visual proof, dynamic composition, and strong
-  commercial hierarchy for every image.
+- 生成 Amazon 标题、五点描述、长描述、后台搜索词。
+- 根据产品事实和买家关注点规划 Amazon 副图。
+- 支持单张副图重做，例如尺寸图、场景图、对比图、功能拆解图。
+- 区分轮播副图与详情页 / A+ 模块图。
+- 支持参考竞品链接或参考图片，但不会照抄。
+- 按买家决策逻辑合并卖点，而不是一个参数做一张图。
+- 强调每张图都有清晰标题、视觉证明、动态表达和商业层次。
 
-## File Structure
+## 文件结构
 
 ```text
 amazon-listing-generator-skill/
@@ -30,38 +26,38 @@ amazon-listing-generator-skill/
 └── README.md
 ```
 
-## Install
+## 安装方式
 
-Clone the repository:
+先克隆仓库：
 
 ```bash
 git clone git@github.com:smilexiaobao1992/amazon-listing-generator-skill.git
 ```
 
-Install into your Codex skills directory:
+安装到 Codex 的 skills 目录：
 
 ```bash
 mkdir -p ~/.codex/skills
 cp -R amazon-listing-generator-skill ~/.codex/skills/amazon-listing-generator
 ```
 
-If you already have an older local version, replace it:
+如果本地已经有旧版本，直接替换：
 
 ```bash
 rm -rf ~/.codex/skills/amazon-listing-generator
 cp -R amazon-listing-generator-skill ~/.codex/skills/amazon-listing-generator
 ```
 
-Validate the skill if you have the system skill creator scripts available:
+如果本机有 system skill-creator 校验脚本，可以校验：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py \
   ~/.codex/skills/amazon-listing-generator
 ```
 
-## Update
+## 更新方式
 
-From the cloned repository:
+在仓库目录执行：
 
 ```bash
 git pull
@@ -69,16 +65,16 @@ rm -rf ~/.codex/skills/amazon-listing-generator
 cp -R . ~/.codex/skills/amazon-listing-generator
 ```
 
-## Basic Usage
+## 基础用法
 
-Invoke the skill in Codex with a product photo and selling points:
+在 Codex 里配合产品图和卖点调用：
 
 ```text
 [$amazon-listing-generator](~/.codex/skills/amazon-listing-generator/SKILL.md)
 请根据白底图和卖点生成Amazon副图
 ```
 
-A typical request:
+一个典型请求：
 
 ```text
 [$amazon-listing-generator](~/.codex/skills/amazon-listing-generator/SKILL.md)
@@ -88,9 +84,9 @@ A typical request:
 家庭风格，暖色。
 ```
 
-## Supported Request Types
+## 支持的请求类型
 
-### Listing Copy
+### 1. Listing 文案
 
 ```text
 只生成Listing文案
@@ -98,7 +94,7 @@ A typical request:
 帮我写标题、五点、描述、后台词
 ```
 
-### Secondary Image Set
+### 2. 副图整套
 
 ```text
 根据白底图和卖点生成副图
@@ -108,10 +104,9 @@ A typical request:
 先出4张预览
 ```
 
-By default, broad secondary-image requests produce a recommended 5-7 image set.
-The skill only creates all 8 AS slots when explicitly requested.
+默认情况下，泛化“副图”请求会输出推荐的 `5-7` 张副图。只有明确要求时才会完整生成 `AS-02` 到 `AS-09` 这 8 张。
 
-### Single Secondary Image
+### 3. 单张副图
 
 ```text
 只生成AS-04尺寸图
@@ -122,7 +117,7 @@ The skill only creates all 8 AS slots when explicitly requested.
 把AS-05改成户外场景
 ```
 
-### Detail Page / A+ Modules
+### 4. 详情页 / A+ 模块图
 
 ```text
 生成详情图
@@ -132,7 +127,7 @@ The skill only creates all 8 AS slots when explicitly requested.
 生成AD-04产品结构详情模块
 ```
 
-### Reference Image Or Competitor Direction
+### 5. 参考图 / 竞品方向
 
 ```text
 参考这张图的感觉重新做AS-04
@@ -143,7 +138,7 @@ The skill only creates all 8 AS slots when explicitly requested.
 参考这个Amazon链接优化副图
 ```
 
-### Style Controls
+### 6. 风格控制
 
 ```text
 家庭风格、暖色
@@ -160,8 +155,8 @@ The skill only creates all 8 AS slots when explicitly requested.
 视觉更强烈
 ```
 
-Visible text defaults to English for Amazon US. Ask for Chinese or bilingual
-copy explicitly when needed:
+默认情况下，如果是 Amazon US / 美国站，图片可见文案会优先用英文。  
+如果你希望图上直接显示中文或双语，可以明确这样说：
 
 ```text
 生成中文副图
@@ -171,9 +166,9 @@ copy explicitly when needed:
 生成中英双语副图
 ```
 
-## Slot Reference
+## Slot 对照表
 
-### Amazon Secondary Images
+### Amazon 副图
 
 ```text
 AS-02 核心卖点图
@@ -186,7 +181,7 @@ AS-08 使用步骤图
 AS-09 包装全家福
 ```
 
-### Detail Page / A+ Modules
+### 详情页 / A+ 模块图
 
 ```text
 AD-01 品牌/价值主视觉
@@ -198,26 +193,23 @@ AD-06 尺寸/规格/适配模块
 AD-07 安装/维护/FAQ
 ```
 
-## Design Logic
+## 设计逻辑
 
-The skill follows these principles:
+这个 skill 主要遵循这些原则：
 
-- Understand the product before writing image prompts.
-- Understand buyer intent and the concern each image should resolve.
-- Use one clear headline/core viewpoint per image.
-- Prove the headline visually with action, scale, mechanism, comparison, or
-  scene context.
-- Combine related facts such as claim + proof + mechanism.
-- Avoid repeated images and avoid filling weak slots just to hit a count.
-- Use reference images and competitors as strategic input, not as templates to
-  copy.
-- Keep secondary images punchy and thumbnail-legible.
-- Keep detail-page modules richer and more editorial.
+- 先理解产品，再写图。
+- 先理解买家担心什么，再安排每张图表达什么。
+- 每张图只讲一个核心观点，并配一个大标题。
+- 标题必须有画面证明，不能只是产品图加标签。
+- 合并相关卖点，例如 `claim + proof + mechanism`。
+- 不重复出图，不为了凑数量硬做弱图。
+- 参考图和竞品只做策略参考，不做照抄模板。
+- 副图要适合缩略图阅读，信息明确、层次强。
+- 详情页 / A+ 图可以更完整、更讲故事。
 
-## Excel Output
+## Excel 输出
 
-The included script can generate an Excel summary when the skill produces
-listing copy or prompt plans:
+仓库内置脚本可以在需要时生成 Excel 汇总表：
 
 ```bash
 python3 scripts/generate_excel.py \
@@ -233,15 +225,15 @@ python3 scripts/generate_excel.py \
   --output "Amazon_Listing_Product.xlsx"
 ```
 
-## Development
+## 开发与维护
 
-Validate after editing:
+修改后校验：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
 ```
 
-Commit and push:
+提交并推送：
 
 ```bash
 git status
