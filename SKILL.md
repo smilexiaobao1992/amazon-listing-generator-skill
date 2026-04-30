@@ -160,7 +160,13 @@ Merge related points into one image when one explains or proves another:
 - Detail + safety: "anti-slip suction base" supports stability under training,
   so show it with base contact and anti-wobble proof.
 - Use cases together: related exercises belong in one multi-function image
-  unless one exercise is the primary lifestyle hero.
+  unless one exercise is the primary lifestyle hero. Multi-use images must plan
+  each body pose around a real contact point on the product before generation:
+  hands on the pull-up bar, hands on dip handles, feet/hands near base support,
+  or body hanging from the correct bar. If the actions cannot all fit cleanly
+  around one product, use separated vignettes, split panels, or ghosted
+  same-person motion states instead of crowding multiple full people onto one
+  distorted product.
 
 If a spec is only a proof point, avoid making it the headline alone. Use it as a
 badge, callout, close-up, or secondary label under the buyer-facing claim.
@@ -430,6 +436,13 @@ Visual intensity requirement:
   keeping the product as the hero.
 - For fitness equipment, include people only in scene/use images or small action
   silhouettes; keep technical images product-led.
+- For fitness multi-action images, protect product geometry first. The product
+  must stay as one rigid object with straight uprights, correct bars, correct
+  handle locations, and stable base proportions. Do not let bodies bend, stretch,
+  duplicate, or move product parts. If showing several exercises, prefer a
+  workout-flow band, numbered vignettes, or semi-transparent same-person action
+  trail. Each pose must visibly grip, press, hang from, or align with the correct
+  product part.
 - Do not let technical images become static. Use arrows, range trails,
   magnified mechanisms, pressure/contact cues, or comparison states to make the
   benefit feel active and understandable.
@@ -487,6 +500,11 @@ Warm natural lighting, stronger commercial contrast, authentic action pose,
 slight depth of field. Real environment, not a studio. Show the exercise action
 first and the product fully visible/stable; then optionally add 1-2 small
 benefit labels. Product colour/shape matches reference.
+Use one primary athlete action only unless the user explicitly asks for multiple
+actions. The athlete must physically connect to the correct product contact
+points: hands gripping the actual pull-up bar or dip handles, feet clear of
+base bars unless the exercise requires contact, no limbs passing through the
+frame. Keep the product rigid and undistorted.
 ```
 
 **AS-06 — 细节特写图 (Detail Macro 2x2)**
@@ -520,6 +538,12 @@ Large step numbers 1-2-3-4 with short captions (4-6 words each):
 Each panel shows product at that stage. Clean warm infographic with strong
 visual hierarchy, not small low-contrast thumbnails. Product matches reference
 photo.
+For multi-function training, this slot may become a "training modes" module
+instead of literal usage steps. Use separated panels or clearly spaced action
+vignettes so each exercise has its own product copy or its own action zone.
+Do not stack several full athletes on one central product if that causes
+misalignment. Label each action only after verifying the pose uses the correct
+bar/handle/base point.
 ```
 
 **AS-09 — 包装全家福 (What's in the Box)**
@@ -549,20 +573,72 @@ Use wider, more editorial compositions than AS images. Text can be slightly
 more explanatory than carousel images, but still avoid paragraph-heavy layouts.
 Each module should have one section message and one clear visual proof.
 
+Detail-page modules must feel richer than carousel secondary images. Do not
+make a set of ordinary banners with empty backgrounds and one isolated model.
+Before generating each AD module, choose one memorable visual hook:
+
+- **Lifestyle world**: family members, children, pets, furniture, room depth, or
+  daily-life props that make the home context feel real. Children and pets can
+  appear as atmosphere or scale context, but never show a child using fitness
+  equipment unless the product is explicitly designed for children.
+- **Physical proof anchored to the product**: if a module mentions footprint,
+  show the base on the floor with a highlighted floor rectangle, glowing
+  footprint zone, measuring-tape grid, clearance shadow, or furniture-scale
+  comparison. If it mentions stability, show force through the frame, base
+  pressure, suction-foot contact, or anti-wobble contrast. If it mentions
+  adjustability, show the movement path on the upright holes and ghosted
+  low/high states.
+- **Editorial depth**: foreground detail, middle-ground product/action, and
+  background context must all support the same claim. Avoid large unused blank
+  areas unless they intentionally protect a strong headline.
+- **Contrast device**: before/after, small-space/converted-space,
+  unstable/stable, low/high adjustment, single exercise/multiple exercises, or
+  ordinary tube/reinforced frame.
+- **Connected detail**: use zoom windows, cutaways, overlays, or callout lines
+  attached to the real product. Do not place generic floating icons that are not
+  tied to visible product parts.
+
+A+ creative gate: every AD module needs **one big idea + one visual event + one
+environmental layer**. If the module can be described as "product with a label",
+redesign it before generation. Use text to name the conclusion, but let the
+scene, overlay, action, or product close-up prove it.
+
 Suggested AD module map:
 
 - **AD-01 — Brand/value hero**: wide lifestyle banner; product in the target
-  environment; concise value statement.
-- **AD-02 — Problem/solution**: show the buyer pain point and how the product
-  solves it in one clean split or before/after composition.
+  environment; concise value statement. Build a full home training atmosphere,
+  not an empty room: family member watching, child/pet nearby as lifestyle
+  context, warm furniture, mat, water bottle, sunlight, and room depth. Keep the
+  product/action as the hero, but use family-life elements to make the image
+  emotionally warmer and less sparse.
+- **AD-02 — Problem/solution / space transformation**: show the buyer pain point
+  and how the product solves it in one strong visual. If home footprint is the
+  proof, anchor the claim to the base with a highlighted floor footprint,
+  glowing rectangle, measuring grid, tape marks, or furniture clearance. Avoid a
+  weak split screen where both sides look similar.
 - **AD-03 — Core selling-point module**: combine related claims and proof points,
-  e.g. load capacity + material thickness + reinforced frame.
+  e.g. load capacity + material thickness + reinforced frame. Show force moving
+  through the frame, reinforced structure highlights, base pressure/contact, and
+  connected tube-thickness detail, instead of only listing "150 kg" and
+  "1.2 mm".
 - **AD-04 — Product structure/detail module**: larger callout diagram or macro
-  detail grid explaining important mechanics.
+  detail grid explaining important mechanics. Use connected zoom insets tied to
+  the product, and make each inset answer a different concern: grip comfort,
+  adjustment lock, dip handle contact, suction-foot stability, fastener/frame
+  joint. Skip any inset that repeats another module.
 - **AD-05 — Use-case module**: multiple scenes or actions showing how the
-  product fits real daily use.
+  product fits real daily use. Use a workout-flow composition, action trail, or
+  multi-scene band; bodies must align correctly with bars and handles. The
+  product may be smaller than in carousel images if action clarity is the point.
+  For complex multi-action modules, split exercises into separate zones,
+  repeated mini product views, or ghosted same-person states. Do not force
+  pull-up, dip, knee raise, and push-up bodies onto one central product if it
+  creates product distortion or wrong body/product contact.
 - **AD-06 — Size/specification module**: dimensions, compatibility, fit, or
-  model/spec table if those facts affect purchase confidence.
+  model/spec table if those facts affect purchase confidence. Specs must be
+  shown on the real product or floor plane: footprint on the base, height range
+  on uprights, user/family silhouettes for scale, and exact numbers in a small
+  clean spec block.
 - **AD-07 — Setup/care/FAQ module**: optional only when installation, use steps,
   maintenance, or common objections are meaningful.
 
@@ -573,6 +649,20 @@ images, but allow richer storytelling:
 - Subheadline: 1 short supporting sentence when needed.
 - Visual proof: real product scene, structural callout, spec table, or macro.
 - Proof labels: exact specs from the user, not invented claims.
+
+A+ module prompt checklist:
+
+- Specify wide module format such as 970x600, 1464x600, or vertical long-module
+  only when requested.
+- State what fills foreground, middle ground, and background.
+- State the exact product part that proves each spec.
+- Allow family, children, pets, or daily-life objects only when they support the
+  buyer concern; keep them secondary to the product.
+- Keep visible text lighter than the visual proof: headline + optional
+  subheadline + 1-3 proof labels.
+- Avoid making every module a centered product hero. Vary layout: cinematic
+  home scene, floor-footprint proof, structural overlay, connected detail
+  diagram, workout-flow scene, and specification board.
 
 Do not use "详情图" to mean AS-06. If the user asks for "详情图里的细节模块",
 generate AD-04, not AS-06, unless they explicitly say "副图细节图".
@@ -664,6 +754,9 @@ associatedWith / instanceOf / preconditionOf / enabledBy
 - [ ] Exact "完整8张" requests produce AS-02 through AS-09 as 8 separate images
 - [ ] Preview batches under 5 images are generated only when explicitly requested
 - [ ] Every image has a buyer concern, visual proof, and strong thumbnail hierarchy
+- [ ] Multi-action fitness images keep the product rigid and anatomically plausible; each body pose connects to the correct bar, handle, or base point
+- [ ] Detail-page/A+ modules are not ordinary empty banners; each has one big idea, one visual event, and one environmental layer
+- [ ] A+ specs are anchored to visible product parts or floor/room context, such as footprint on the base or load proof through the frame
 - [ ] User style constraints such as "家庭风格" and "暖色" are visible in the prompt
 - [ ] Visible image text language follows user request or marketplace assumption
 - [ ] Excel generation matches requested mode; copy-only requests do not write files unless export is requested
