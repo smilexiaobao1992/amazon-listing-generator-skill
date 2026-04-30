@@ -94,7 +94,17 @@ Common single-image commands users may give:
 - "给你一张竞品副图参考，不要照抄，按我们的产品改"
 
 Examine the uploaded product photo. Extract: product category, materials,
-colours, size, brand markings, key design features.
+colours, size, brand markings, key design features, and the **current product
+state** shown in the image: folded, unfolded, extended, collapsed, open, closed,
+assembled, packed, filled, empty, on/off, locked, unlocked, or in-use.
+
+Protect the observed product state. Do not invent a more extreme state just to
+make a visual claim stronger. If the product photo already shows a folded or
+stored state, do not compress, narrow, shorten, flatten, or create a "more
+folded" version. If it shows an unfolded state and no folding mechanism is
+visible or provided by the user, do not invent a folded version. Preserve the
+product's real proportions, width, height, tube spacing, hinge/lock positions,
+and structural relationships.
 
 Read selling points verbatim. Identify: core benefit, material claim,
 target user, any specs or numbers.
@@ -126,6 +136,15 @@ background, colours, or proprietary visual devices. Adapt the reference to the
 current product, buyer concern, user-provided specs, and brand/style direction.
 When the reference conflicts with product truth or buyer value, prioritize the
 current product and explain the adaptation briefly before generation.
+
+Reference images can suggest how to express a benefit, but they must not
+override the current product state. Transfer the communication method, such as
+home corner placement, floor footprint highlight, folding arrow, or mechanism
+zoom, without forcing the current product into a different or exaggerated shape.
+For foldable/storage claims, express compactness with environment and proof
+devices: wall/corner placement, furniture-scale comparison, floor footprint
+highlight, clearance shadow, measuring grid, storage path arrow, or lock/hinge
+close-up. Do not show compactness by shrinking or distorting the product body.
 
 Build a buyer-concern map before writing image prompts. Identify what a buyer
 would worry about first: fit, stability, capacity, adjustability, use cases,
@@ -223,6 +242,13 @@ Use dynamic expression for static generated images:
   sliding arrows, user-height silhouettes, and the lock/adjust mechanism.
 - For dimension images, combine exact dimensions with room fit or adjustable
   range, not only front-view measurement arrows.
+- For foldable or compact-storage products, first determine whether the uploaded
+  product is already folded or unfolded. If it is already folded, keep that
+  exact state and show compact storage through wall/corner placement, floor
+  footprint overlay, room-scale context, or mechanism inset. If both states are
+  needed but only one is visible, use a subtle ghosted outline only when it can
+  be inferred from the real mechanism; label inferred states as visual
+  explanation, not exact product shape.
 - For strength/stability, show the claim being visually tested or explained:
   user action, base contact, reinforced structure, load badge, and proof detail
   in one composition.
@@ -754,6 +780,7 @@ associatedWith / instanceOf / preconditionOf / enabledBy
 - [ ] Exact "完整8张" requests produce AS-02 through AS-09 as 8 separate images
 - [ ] Preview batches under 5 images are generated only when explicitly requested
 - [ ] Every image has a buyer concern, visual proof, and strong thumbnail hierarchy
+- [ ] Product current state is protected; foldable/storage claims do not compress, shrink, or invent a more extreme product state
 - [ ] Multi-action fitness images keep the product rigid and anatomically plausible; each body pose connects to the correct bar, handle, or base point
 - [ ] Detail-page/A+ modules are not ordinary empty banners; each has one big idea, one visual event, and one environmental layer
 - [ ] A+ specs are anchored to visible product parts or floor/room context, such as footprint on the base or load proof through the frame
