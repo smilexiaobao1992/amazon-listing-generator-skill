@@ -740,6 +740,23 @@ Each module should have one section message and one clear visual proof.
 
 Detail-page modules must feel richer than carousel secondary images. Do not
 make a set of ordinary banners with empty backgrounds and one isolated model.
+Before generating each AD module, make the same human design decisions required
+for AS images, but at a wider/editorial scale:
+
+- Module role: hero, problem/solution, proof, structure/detail, use-case,
+  specification, setup, or FAQ.
+- Text system: no headline / large headline + subheadline / large spec /
+  callout-only / comparison labels. A+ can use more text than AS, but the text
+  must be grouped into a designed title zone, side panel, spec block, or caption
+  band.
+- Colour system: choose one accent colour from product, brand, scene, category,
+  or reference image plus neutral text. Do not default to any fixed colour pair.
+- Layout rhythm: vary modules across the set. Avoid several consecutive wide
+  banners with centered product, black-on-white tags, or identical title
+  placement.
+- Detail and proof: connect labels, zoom windows, cutaways, icons, and spec
+  blocks to real visible product parts or scene evidence.
+
 Before generating each AD module, choose one memorable visual hook:
 
 - **Lifestyle world**: family members, children, pets, furniture, room depth, or
@@ -768,6 +785,18 @@ environmental layer**. If the module can be described as "product with a label",
 redesign it before generation. Use text to name the conclusion, but let the
 scene, overlay, action, or product close-up prove it.
 
+A+ layout quality gate:
+
+- Headline, if used, must have a reserved title zone, deliberate size/line breaks,
+  and colour hierarchy. It may be large and bold when it serves the module.
+- Support text should be 1 short subheadline or 2-4 short proof labels, not a
+  paragraph pasted over the image.
+- Avoid repeating the same label style across AD modules. Mix title bands,
+  diagonal panels, macro crops, icon rows, comparison panels, spec boards, and
+  text-free lifestyle modules when appropriate.
+- A+ detail modules should use comfortable enlarged part crops, rounded/circular
+  zoom windows, cutaways, or connected insets, not a rigid grid of tiny labels.
+
 Suggested AD module map:
 
 - **AD-01 — Brand/value hero**: wide lifestyle banner; product in the target
@@ -790,13 +819,15 @@ Suggested AD module map:
   detail grid explaining important mechanics. Use connected zoom insets tied to
   the product, and make each inset answer a different concern: grip comfort,
   adjustment lock, dip handle contact, suction-foot stability, fastener/frame
-  joint. Skip any inset that repeats another module.
+  joint. Prefer one large hero detail plus 2-3 connected support details over a
+  generic grid. Skip any inset that repeats another module.
 - **AD-05 — Use-case module**: multiple scenes or actions showing how the
-  product fits real daily use. Use a workout-flow composition, action trail, or
-  multi-scene band; bodies must align correctly with bars and handles. The
+  product fits real daily use. Use a workout-flow composition, split scene,
+  diagonal collage, radial action map, or multi-scene band; bodies must align
+  correctly with bars and handles. The
   product may be smaller than in carousel images if action clarity is the point.
   For complex multi-action modules, split exercises into separate zones,
-  repeated mini product views, or ghosted same-person states. Do not force
+  repeated mini product views, or numbered action panels. Do not force
   pull-up, dip, knee raise, and push-up bodies onto one central product if it
   creates product distortion or wrong body/product contact.
 - **AD-06 — Size/specification module**: dimensions, compatibility, fit, or
@@ -821,10 +852,13 @@ A+ module prompt checklist:
   only when requested.
 - State what fills foreground, middle ground, and background.
 - State the exact product part that proves each spec.
+- State the module's layout decision: text role, title zone, colour hierarchy,
+  label style, product/person relationship, detail expression, and dynamic proof.
 - Allow family, children, pets, or daily-life objects only when they support the
   buyer concern; keep them secondary to the product.
-- Keep visible text lighter than the visual proof: headline + optional
-  subheadline + 1-3 proof labels.
+- Keep visible text designed and grouped: headline or large spec if useful,
+  optional short subheadline, and 1-4 proof labels. Do not paste paragraphs over
+  the image.
 - Avoid making every module a centered product hero. Vary layout: cinematic
   home scene, floor-footprint proof, structural overlay, connected detail
   diagram, workout-flow scene, and specification board.
