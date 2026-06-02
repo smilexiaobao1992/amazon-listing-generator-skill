@@ -85,6 +85,122 @@ Prefer the mature pattern, then improve clarity. For a product with ordinary
 specs, the image must win through visual proof, scene believability, and strong
 thumbnail hierarchy.
 
+## Human-made Amazon image realism
+
+Mature Amazon carousel images usually look more practical than artistic. They
+are built to answer shopping questions quickly, not to look like a unified ad
+campaign. When the user wants images that feel like a real Amazon designer made
+them, follow these patterns:
+
+- Mix image roles instead of forcing one style across the whole set: clean white
+  dimension diagram, real lifestyle scene, macro material/detail image,
+  structure/feature callout, comparison, and package/accessory flat lay.
+- Use plain, product-specific headlines. Human-made Amazon images often use
+  feature nouns or direct proof labels, such as "Orthopedic Egg Crate Foam",
+  "Ultra-Soft Flannel Surface", "Adjustable Height", or dimension numbers.
+  Avoid brand-ad slogans unless the listing is intentionally premium/editorial.
+- Let some images have almost no design. A true macro texture image or clean
+  dimension diagram can look more Amazon-real than a fully styled scene.
+- Technical diagrams can use white or light grey backgrounds, accent/neutral
+  measurement arrows, and simple sans-serif labels. Do not force every technical
+  image into a warm home room if that reduces clarity.
+- Lifestyle images can be text-free or use only a small caption. The scene must
+  prove scale, use, storage, or fit; it does not need a big headline.
+- Callouts should feel added by a marketplace designer: thin lines, small labels,
+  ordinary arrows, clean masks, and restrained insets. Avoid cinematic lighting,
+  UI panels, and decorative effects.
+- Human-made Amazon images often use bolder typography than a minimal design
+  system would: large italic or condensed headlines, accent-colour + neutral word
+  hierarchy, a short subheadline, side ribbons, circular icon labels, or colour
+  bands. Choose the accent colour from the product, brand, category norm, scene,
+  or reference image. Orange/red is only a common fitness-equipment example, not
+  a fixed default.
+- Avoid a monotonous label system. If several images all use small black text on
+  white tags, the set feels auto-generated. Vary the treatment by role: large
+  claim headline, dimension labels, coloured compatibility strips, circular
+  detail bubbles, icon + text stack, or text-free lifestyle.
+- Comfortable detail images usually use enlarged real part crops, soft circular
+  zoom windows, warm/white negative space, and labels that sit inside or next to
+  the crop. They do not need to be a rigid 2x2 grid of white cards.
+- Prioritize product truth over visual richness. If the real category examples
+  are simple, follow the category's simple proof language and improve clarity
+  only where it helps the buyer.
+
+Human-made Amazon images are planned around layout, not just a prompt headline.
+For each image, decide:
+
+- Whether text is needed at all. Some lifestyle or macro images should rely on
+  action, scale, or detail and use no headline.
+- Where the text can live without fighting the product: open wall, side band,
+  top corner, bottom strip, table area, or a deliberately reserved whitespace
+  zone.
+- Whether text needs a background: no background, subtle translucent panel,
+  clean white card, contrast block, or simple label tag. The background should
+  improve readability, not become the design.
+- How typography carries hierarchy: one key phrase or number can use a different
+  colour or weight; the rest should be quieter. Do not style every word as a
+  headline.
+- Whether the headline should be large. Large text is valid for strong claims,
+  specs, compatibility, height range, or load proof, but it must have a reserved
+  area, deliberate line breaks, colour hierarchy, and optional subheadline.
+- How the product and people cooperate: the person should prove use, scale, or
+  contact, while leaving the product structure and selling detail visible.
+- How details are shown: real macro, product crop, connected inset, callout dot,
+  or cutaway. Each detail must point to a visible part and explain a buyer
+  concern.
+- How motion is expressed: physical contact, pressure, range, sequence,
+  before/after, scale, or comparison. Motion devices must prove the selling
+  point, not decorate the image.
+
+## Fitness-equipment carousel patterns
+
+For power towers, dip bars, weight benches, dumbbell racks, and similar home-gym
+equipment, real Amazon examples often use a bolder, more practical visual system
+than generic lifestyle ecommerce:
+
+- **Headline system**: large italic/condensed bold headline is common. Use one
+  accent colour for the key words or numbers and black/dark grey or another
+  neutral colour for support words. Choose the accent from product/brand/category
+  context or the user's reference image. Reserve a full title band or open wall
+  area. Add a smaller subtitle only when it explains compatibility, family fit,
+  material, or setup.
+- **Feature/detail system**: avoid many identical white tags. Use a mix of
+  circular icons, accent-colour side ribbons, diagonal panels, inset crops, simple
+  line callouts, and large part close-ups. Keep labels tied to real visible
+  parts.
+- **Dimension/fit system**: use a clear floor footprint, large dimension lines,
+  height range trails, family/user scale, or a mat/room plane. Accent-colour
+  numbers or arrows are acceptable if they are ordinary infographic graphics, not
+  glow.
+- **Strength/stability system**: show the frame, base, weight/load proof, or
+  structural icons. Large spec numbers can be centered and bold if the spec is
+  real. If the user did not provide a load number, use visual proof only.
+- **Exercise modes**: use separated vignettes or an X/radial collage with one
+  action per zone. Label actions directly. Do not crowd several bodies onto one
+  distorted product.
+- **Comfort/detail modules**: use big angled close-ups of pads, grips, knobs,
+  feet, or tubing, plus small posture/hand/contact illustrations when helpful.
+  A detail image should feel like a designed module, not a collection of small
+  white labels.
+- **Family/height fit**: show people as scale context beside the product, not
+  necessarily using it. Children can be scale/lifestyle context only; do not show
+  them using adult fitness equipment unless the product is designed for that.
+
+Apply this pattern carefully: use bold typography and colour hierarchy, but keep
+product structure clear, avoid unsupported specs, and avoid fantasy effects.
+
+Human-made Amazon image test:
+
+1. Would this image still make sense if all decorative effects were removed?
+2. If there is a headline, does it read like a feature label or buyer proof, not
+   a poster line?
+3. Is the product larger and clearer than the text, and are key parts not
+   covered by people or labels?
+4. Does the layout match the slot's natural role, or is a lifestyle style being
+   forced onto a technical proof image?
+5. Would a marketplace designer plausibly create this in Photoshop from product
+   photos, icons, labels, and simple arrows?
+
 ## Dynamic visual language
 
 A static generated image should still feel like something is happening. Before
@@ -103,6 +219,36 @@ writing each prompt, pick one dynamic device:
 
 If an image has no dynamic device and only shows the product with labels, it
 must be redesigned or skipped unless it is a compliant main image.
+
+Dynamic does not mean decorative special effects. For realistic ecommerce
+imagery, prefer physical dynamics: correct user action, hand contact, product
+range, base pressure, room footprint, foreground detail, perspective, or
+before/after composition. Avoid AI-poster dynamics such as neon glow, energy
+rings, fantasy light trails, duplicated ghost athletes, black-gold button
+badges, oversized motivational typography, and glowing UI panels unless the
+user explicitly asks for that style.
+
+## Warm real home style
+
+When the user asks for "家庭暖色", "家庭风格", "暖色家居", or a similar home
+style, treat it as realistic warm home ecommerce photography, not a gold fitness
+poster.
+
+- Scene: lived-in home fitness corner, warm wood floor, cream or warm neutral
+  wall, natural window light, mat, plant, shelf, sofa edge, or small daily-life
+  props only when they support scale and realism.
+- Lighting: warm daylight with believable shadows. Avoid neon rim light, gold
+  light trails, glowing floor grids, and lens flare.
+- Layout: product remains the hero and should not be hidden by a model, giant
+  headline, or label stack.
+- Text: keep headline under about 15% of the image area; use small callouts or
+  restrained spec chips instead of black-gold pill buttons.
+- Action: one realistic exercise action per scene image unless a split-panel
+  training module is requested. Each pose must connect to the correct product
+  part.
+- Technical images: use the warm home scene as the base photo, then add thin
+  measurement lines, small labels, or connected macro insets. Do not add glowing
+  arrows or decorative energy effects.
 
 ## Buyer-first analysis
 
@@ -129,15 +275,36 @@ For every image idea, define the buyer cognition shift:
 
 Reject or merge any image whose cognition shift duplicates another image.
 
-## Core viewpoint headlines
+## Core viewpoint and text
 
-Most strong Amazon secondary images have one large headline because the headline
-forces a clear idea. Use this structure for every image:
+Many strong Amazon secondary images use a headline, but not every image needs
+one. Use this structure for every image:
 
-`big headline + visual proof + short support labels`
+`core selling point + visual proof + optional short support labels`
 
-The headline should be the buyer-facing conclusion, not the production slot
-name. It must be specific enough that the visual can prove it.
+The core selling point should be buyer-facing and specific enough that the
+visual can prove it. It may be expressed as a headline, a large spec number,
+dimension labels, a before/after split, a macro detail, a use scene, or a simple
+callout system.
+
+For US Amazon carousel images, the headline should sound like concrete
+feature-benefit ecommerce copy, not a generic lifestyle slogan. Prefer noun
+phrases and product-specific mechanisms:
+
+- "4-in-1 Training Station"
+- "Adjustable Height Range"
+- "Wide Anti-Slip Base"
+- "Compact Home Gym Footprint"
+- "Reinforced Steel Frame"
+- "Home Gym Fit Guide"
+
+Avoid vague poster-style lines unless the user explicitly asks for a brand ad:
+
+- "Train More At Home"
+- "Fits Your Home Space"
+- "Upgrade Your Workout"
+- "Built For Your Life"
+- "Home Fitness Made Easy"
 
 Good headline patterns:
 

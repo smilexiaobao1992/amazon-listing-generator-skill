@@ -209,16 +209,71 @@ For every proposed image, answer these checks before generating:
   idea from action, arrows, ghosted positions, contrast, close-up context, or
   scale before reading labels.
 
-Every production secondary image needs a clear hierarchy:
+Every production secondary image needs a clear communication hierarchy. A
+headline is a design choice, not a required decoration:
 
-1. **Big headline / core viewpoint**: one strong buyer-facing claim. It should
-   answer "why should I care?" not merely name the slot. Use the selected image
-   text language. For US Amazon, this is usually 3-8 English words. Avoid weak
-   labels like "Features", "Details", "Stable Home Training", or "Product
-   Benefits" unless strengthened with a specific promise.
+1. **Core selling point / viewpoint**: one buyer-facing claim. It should answer
+   "why should I care?" not merely name the slot. This can be expressed through
+   a headline, a large spec, a dimension line, a before/after split, a product
+   detail, or a clear action scene.
 2. **Visual proof**: product in action, range, comparison, mechanism, scale, or
-   environment that proves the headline.
-3. **Support labels**: 1-3 short badges/callouts with exact specs or proof.
+   environment that proves the claim.
+3. **Support labels**: 0-3 short badges/callouts with exact specs or proof.
+   Use no support labels when the photo or detail already proves the point.
+
+Before writing any image prompt, make a **layout decision**, the way a human
+designer would:
+
+- Text role: no headline / small caption / large headline / large spec number /
+  callout-only. Do not force a headline on lifestyle, macro, or clean dimension
+  images when the visual proof is stronger without it.
+- Text placement: choose a reserved text zone such as top-left, side band, lower
+  strip, open wall area, or no text zone. Do not place text over the user's body,
+  product contact points, adjustment holes, handles, feet, or key details.
+- Typography treatment: define font weight, relative size, line breaks, and
+  hierarchy. Use colour only to separate meaning, such as a key number, material,
+  or action word; avoid styling every word equally.
+- Text background: decide whether text needs a subtle translucent panel,
+  solid block, white space, or no background. Use a background only to improve
+  readability, not as decoration.
+- Visual text system: choose a varied treatment across the set. Do not make
+  three or more images in a row use the same black-text-on-white small labels.
+  Mix appropriate treatments such as large two-tone headline, small caption,
+  side ribbon, colour band, circular detail label, dimension label, icon + text,
+  or text-free lifestyle scene.
+- Product/person relationship: decide whether the product is unobstructed hero,
+  action partner, background context, or macro source. People must support the
+  selling point and must not hide structural proof.
+- Detail expression: decide whether the detail should be a real close-up,
+  connected inset, crop, cutaway, or callout point. Details must point to real
+  visible parts and answer a buyer concern.
+- Dynamic expression: choose the physical effect to show: correct user contact,
+  base pressure, adjustment range, footprint, comparison state, hand scale,
+  opened/closed state, pour/flow, load, texture, or usage sequence. Avoid adding
+  motion devices that do not prove the selling point.
+
+Amazon secondary-image headline style:
+
+- Prefer concrete feature-benefit noun phrases over generic advertising
+  sentences. The headline should sound like Amazon carousel copy, not a brand
+  poster slogan.
+- Large headlines are allowed when the slot needs a strong claim. Make them feel
+  human-designed: reserve a clean title zone, use deliberate line breaks, italic
+  or condensed bold type when suitable, and use a flexible colour hierarchy:
+  one product/brand/category accent colour plus one neutral text colour. Add a
+  smaller subheadline only when it clarifies fit, compatibility, or proof. A large
+  headline should never sit randomly over the product or cover the selling detail.
+- Use product-specific words, mechanism words, or exact specs when known:
+  "4-in-1 Training Station", "Adjustable Height Range", "Wide Anti-Slip Base",
+  "Compact Home Gym Footprint", "Reinforced Steel Frame".
+- Avoid generic lifestyle slogans such as "Train More At Home", "Fits Your Home
+  Space", "Upgrade Your Workout", "Built For Your Life", or "Home Fitness Made
+  Easy" unless paired with a specific proof point.
+- For dimension images, use utility-style headlines such as "Home Gym Fit
+  Guide", "Check Your Workout Space", or "Compact Footprint" instead of vague
+  fit claims.
+- For lifestyle images, use the action or product role as the headline, e.g.
+  "Pull-Up Training Station" or "Dip Station For Home", not motivational copy.
 
 Headline examples by category logic:
 
@@ -275,7 +330,8 @@ Layering check before generation:
 - Foreground: what grabs attention first?
 - Middle ground: where is the product or action proof?
 - Background: what context supports the claim without clutter?
-- Text hierarchy: one big headline, then only the few labels needed.
+- Text/annotation hierarchy: no text, small caption, headline, large spec,
+  dimension labels, or callouts only, whichever best expresses the selling point.
 
 Detail/close-up images are optional. Generate AS-06 only when the details add
 new buying confidence that is not already proven in other images. If the same
@@ -287,11 +343,13 @@ For image requests, translate the buyer-concern map into a shot plan before
 generation:
 
 - Slot id and image type
-- Big headline / core viewpoint
+- Core selling point / viewpoint
 - Buyer question being answered
 - Main visual proof, not just text
 - Dynamic device: action, arrow, ghosted state, before/after, scale, or inset
-- Layering plan: foreground, middle ground, background, text hierarchy
+- Layout decision: text role, text placement, typography hierarchy, text
+  background, product/person relationship, detail expression, and dynamic proof
+- Layering plan: foreground, middle ground, background, communication hierarchy
 - Scene/background and visual intensity
 - Exact short text labels to place on the image
 - Negative constraints: what must not appear
@@ -302,16 +360,20 @@ Amazon secondary-image composition, visual hierarchy, background, lighting,
 icons, short callout copy, and scene context. Prefer clean commercial layouts
 that make the product and benefit legible at thumbnail size.
 
-Default to **strong commercial Amazon visuals**, not plain catalog layouts:
+Default to **credible commercial Amazon visuals**, not plain catalog layouts or
+AI-poster layouts:
 
 - Use high contrast between product and background, warm directional lighting,
-  clear shadows, depth, large product scale, and confident typography.
+  clear shadows, depth, large product scale, and confident but restrained
+  typography.
 - Use lifestyle action, dramatic close-ups, dimension arrows, or comparison
   devices to prove the benefit visually.
 - Avoid flat grey backgrounds for every image; reserve them for technical slots
   only, and add accent colour, depth, or context when the user asks for a style
   such as "家庭风格" or "暖色".
 - Keep text minimal, but make the few words large and high-impact.
+- For real-home styles, the image should feel like a high-quality product photo
+  with light commercial layout added afterwards, not a CGI fitness poster.
 
 User-specified art direction overrides auto-completion. Preserve explicit
 requests for style, scene, colour palette, language, target user, background,
@@ -319,6 +381,45 @@ layout, angle, size labels, and text placement. If the user says "家庭风格",
 "厨房场景", "黑金风", "不要文字", "只要英文", "中文文案", "中英双语",
 or similar, incorporate that constraint into the relevant prompt instead of
 using the default style.
+
+When the user asks for "家庭暖色", "家庭风格", "暖色家居", "home warm style",
+or similar, use the **Warm Real Home Ecommerce** preset unless they explicitly
+request a poster, neon, gaming, cyber, or black-gold style:
+
+- Scene: realistic lived-in home fitness corner, warm wood floor, cream or warm
+  neutral wall, natural window light, soft shadows, simple mat, plant, shelf, or
+  sofa edge only when it helps scale and realism.
+- Lighting: warm daylight or late-afternoon natural light with believable
+  shadows. Avoid fake glow, neon rim light, gold light trails, lens flare, and
+  fantasy energy effects.
+- Dynamic visual proof: use real physical events such as a correct exercise
+  action, hand contact, base pressure, floor footprint, perspective dimension
+  lines, range ghosting for product parts only, foreground macro, or before/after
+  room composition.
+- Typography: choose text only after the layout is clear. Some warm home images
+  should have no headline or only a small caption; others can use a large
+  confident Amazon headline when the claim needs it. If a large headline is used,
+  reserve a clean title zone, use clear line breaks, and use 1-2 colours for
+  hierarchy. Choose the accent colour from the product, brand, category norm,
+  scene, or user reference image; do not default to orange/black unless that fits
+  the product or provided direction. Use concrete Amazon-style feature-benefit
+  phrases instead of generic lifestyle slogans.
+- Labels: vary the label system based on image role: thin callout lines, compact
+  spec chips, coloured side bands, circular detail labels, icon + text stacks, or
+  subtle text panels. Avoid repeating black text on white tags across the set,
+  and avoid black-gold pill buttons, glowing outlines, decorative icon stacks, or
+  UI panels that make the image look like a template.
+- People: use realistic fitness models only where the buyer needs action proof.
+  Avoid bodybuilder-poster poses, plastic skin, duplicated ghost athletes, and
+  poses that cover the product or distort the frame.
+
+Add this negative constraint to every Warm Real Home Ecommerce prompt:
+"Avoid AI poster aesthetics: no neon glow, no energy rings, no fantasy light
+trails, no black-and-gold button badges, no random oversized motivational
+typography that lacks a reserved title area, no CGI showroom, no plastic-smooth
+skin, no duplicated ghost athletes, no product-obscuring bodies. Keep the image
+grounded in realistic warm home photography with purposeful Amazon ecommerce
+annotations."
 
 Visible image text language rules:
 
@@ -455,20 +556,25 @@ Visual intensity requirement:
 - Every image must be thumbnail-legible: product/action occupies the visual
   center, headline is short, and labels are readable.
 - Use stronger composition than a plain white/grey product render: foreground
-  scale, diagonal energy, warm highlights, contrast blocks, inset magnifiers, or
-  human action where appropriate.
+  scale, real action, perspective depth, before/after contrast, clean dimension
+  lines, inset magnifiers, or human action where appropriate.
+- "Dynamic" means a visible buyer-relevant event is happening: a user is gripping
+  the correct bar, the base is shown under pressure, the height range is shown
+  with a product-part trail, the footprint is anchored to the floor, or a detail
+  is connected to the full product. It does not mean decorative glow, energy
+  rings, fantasy motion trails, or oversized poster typography.
 - For "家庭风格" use a warm real home-gym/living-room fitness environment with
   wood floor, warm wall colour, natural light, and clean lifestyle props, while
-  keeping the product as the hero.
+  keeping the product as the hero. For "家庭暖色", apply the Warm Real Home
+  Ecommerce preset above.
 - For fitness equipment, include people only in scene/use images or small action
   silhouettes; keep technical images product-led.
 - For fitness multi-action images, protect product geometry first. The product
   must stay as one rigid object with straight uprights, correct bars, correct
   handle locations, and stable base proportions. Do not let bodies bend, stretch,
   duplicate, or move product parts. If showing several exercises, prefer a
-  workout-flow band, numbered vignettes, or semi-transparent same-person action
-  trail. Each pose must visibly grip, press, hang from, or align with the correct
-  product part.
+  workout-flow band, numbered vignettes, or separate action zones. Each pose must
+  visibly grip, press, hang from, or align with the correct product part.
 - Do not let technical images become static. Use arrows, range trails,
   magnified mechanisms, pressure/contact cues, or comparison states to make the
   benefit feel active and understandable.
@@ -485,7 +591,14 @@ buyer-facing promise and make it visually obvious through action, scale,
 before/after, or multi-use composition. Use one bold headline and only 2-3
 supporting badges. Avoid generic lines like "stable home training" unless the
 visual clearly proves stability. Strong Amazon hero composition: large product,
-warm accent background, high contrast, confident headline, shadow and depth.
+warm commercial background, high contrast, confident but restrained headline,
+shadow and depth. For Warm Real Home Ecommerce, use a real home fitness corner,
+one believable action moment, and light ecommerce annotations. Avoid motivational
+poster composition, giant stacked typography, glow rings, motion-trail athletes,
+black-gold button badges, and bodies that hide the product. Headline should be
+a concrete product-role or feature-benefit phrase, such as "4-in-1 Training
+Station", "Pull-Up & Dip Station", or "Full-Body Home Workouts"; avoid generic
+slogans such as "Train More At Home".
 Product must exactly match the uploaded reference photo.
 ```
 
@@ -494,9 +607,15 @@ Product must exactly match the uploaded reference photo.
 $imagegen [product matching reference photo] centred, 3/4 angle.
 Thin callout lines with circle dots pointing to only the 4-6 most important
 physical features from the buyer-concern map. Labels are 2-4 words each.
-Warm technical diagram style with beige/light grey background, accent lines,
-inset magnifier circles for important details, and strong product contrast.
-Lines balanced. Avoid a flat low-energy diagram.
+Warm technical ecommerce style with either a restrained beige/light grey
+background or a realistic warm home background when requested. Make a deliberate
+designer layout: either a large two-tone feature headline in a reserved title
+zone, or a smaller title plus coloured side-band labels. Do not default to all
+black text on white tags. Use varied Amazon-style callouts such as accent-colour
+side ribbons, circular detail markers, thin lines, and connected inset
+magnifiers for important details. Lines balanced. Avoid a flat low-energy
+diagram, but also avoid glowing arcs, neon outlines, black-gold UI buttons,
+heavy decorative icon stacks, and random poster typography.
 Product must exactly match the uploaded reference photo.
 ```
 
@@ -515,6 +634,12 @@ Default to white or light grey technical background unless the user requests a
 scene style such as home, kitchen, bathroom, garage, or outdoor. Monospace
 numbers. Dual units cm and inch. Add subtle room-scale context when helpful so
 buyers understand home fit.
+For Warm Real Home Ecommerce, anchor measurements to a believable room floor:
+use a non-glowing footprint rectangle, perspective dimension lines, a realistic
+scale silhouette, and restrained labels. Avoid luminous floor grids, neon arrows,
+oversized labels, and fake exact numbers. Headline should be utility-style and
+specific, such as "Home Gym Fit Guide", "Check Your Workout Space", or "Compact
+Footprint"; avoid vague slogans such as "Fits Your Home Space".
 Product must exactly match the uploaded reference photo.
 ```
 
@@ -526,6 +651,10 @@ Warm natural lighting, stronger commercial contrast, authentic action pose,
 slight depth of field. Real environment, not a studio. Show the exercise action
 first and the product fully visible/stable; then optionally add 1-2 small
 benefit labels. Product colour/shape matches reference.
+For Warm Real Home Ecommerce, make the scene look like realistic home fitness
+photography: warm daylight, wood floor, lived-in but tidy room, restrained text,
+and no fantasy glow, energy rings, duplicated action trails, or motivational
+poster wall text.
 Use one primary athlete action only unless the user explicitly asks for multiple
 actions. The athlete must physically connect to the correct product contact
 points: hands gripping the actual pull-up bar or dip handles, feet clear of
@@ -541,8 +670,14 @@ full product context plus 2-4 connected magnifier insets, or a dynamic detail
 story such as base contact under pressure, adjustment hole/lock mechanism, grip
 texture in use, or reinforced tube connection. Use 2x2 macro grid only when all
 four panels are meaningful and distinct. Each label is 2-4 words. Details match
-reference photo. Avoid generic parts, repeated proof points, and decorative
-macro panels.
+reference photo. For Warm Real Home Ecommerce, use real macro photography cues:
+natural warm light, floor contact, visible texture, enlarged real part crops,
+soft circular or rounded zoom windows, and labels integrated into the crop.
+Detail images should feel comfortable and product-real: large macro part, clear
+connection to the full product, soft warm or white background, and 1-3 label
+styles that match the detail. Avoid making every label a black-on-white tag.
+Avoid generic parts, repeated proof points, decorative macro panels, glowing
+pressure rings, neon outlines, and black-gold label boxes.
 ```
 
 **AS-07 — 竞品对比图 (Comparison)**
@@ -570,6 +705,10 @@ vignettes so each exercise has its own product copy or its own action zone.
 Do not stack several full athletes on one central product if that causes
 misalignment. Label each action only after verifying the pose uses the correct
 bar/handle/base point.
+For Warm Real Home Ecommerce, keep panels photographic and restrained: warm home
+background, consistent product geometry, simple separators, small labels, and
+realistic poses. Avoid comic-book panels, glowing arrows, ghost athletes,
+oversized step numbers, and black-gold UI styling.
 ```
 
 **AS-09 — 包装全家福 (What's in the Box)**
@@ -608,7 +747,7 @@ Before generating each AD module, choose one memorable visual hook:
   appear as atmosphere or scale context, but never show a child using fitness
   equipment unless the product is explicitly designed for children.
 - **Physical proof anchored to the product**: if a module mentions footprint,
-  show the base on the floor with a highlighted floor rectangle, glowing
+  show the base on the floor with a highlighted floor rectangle, subtle
   footprint zone, measuring-tape grid, clearance shadow, or furniture-scale
   comparison. If it mentions stability, show force through the frame, base
   pressure, suction-foot contact, or anti-wobble contrast. If it mentions
@@ -640,7 +779,7 @@ Suggested AD module map:
 - **AD-02 — Problem/solution / space transformation**: show the buyer pain point
   and how the product solves it in one strong visual. If home footprint is the
   proof, anchor the claim to the base with a highlighted floor footprint,
-  glowing rectangle, measuring grid, tape marks, or furniture clearance. Avoid a
+  subtle rectangle, measuring grid, tape marks, or furniture clearance. Avoid a
   weak split screen where both sides look similar.
 - **AD-03 — Core selling-point module**: combine related claims and proof points,
   e.g. load capacity + material thickness + reinforced frame. Show force moving
@@ -780,6 +919,14 @@ associatedWith / instanceOf / preconditionOf / enabledBy
 - [ ] Exact "完整8张" requests produce AS-02 through AS-09 as 8 separate images
 - [ ] Preview batches under 5 images are generated only when explicitly requested
 - [ ] Every image has a buyer concern, visual proof, and strong thumbnail hierarchy
+- [ ] Every image makes a deliberate layout decision: text/no text, text position, typography hierarchy, text background, product/person relationship, detail expression, and dynamic proof
+- [ ] Each image expresses its selling point correctly even if it has no headline; the product, person, detail, or annotation must carry the claim
+- [ ] Visible text, when used, has human-designed size, position, spacing, colour hierarchy, and optional background support; it does not feel auto-placed
+- [ ] Visible headlines use concrete Amazon-style feature-benefit copy, not generic poster slogans such as "Train More At Home" or "Fits Your Home Space"
+- [ ] A multi-image set varies its text/label system; do not repeat black text on white tags across several images when bolder Amazon-style bands, icons, circles, dimension labels, or large specs would fit better
+- [ ] Fitness-equipment images may use bold accent-colour + neutral headline hierarchy, large spec numbers, side ribbons, circular icons, diagonal detail panels, or large part close-ups when they serve the selling point; accent colour is selected from product/brand/category/reference context, not fixed to orange/red
+- [ ] Warm-home images follow Warm Real Home Ecommerce: realistic home photo feel, restrained annotations, natural warm light, no CGI showroom look
+- [ ] Images do not show AI-poster artifacts: neon glow, energy rings, fantasy light trails, black-gold button badges, oversized motivational typography, duplicated ghost athletes, or product-obscuring bodies
 - [ ] Product current state is protected; foldable/storage claims do not compress, shrink, or invent a more extreme product state
 - [ ] Multi-action fitness images keep the product rigid and anatomically plausible; each body pose connects to the correct bar, handle, or base point
 - [ ] Detail-page/A+ modules are not ordinary empty banners; each has one big idea, one visual event, and one environmental layer
